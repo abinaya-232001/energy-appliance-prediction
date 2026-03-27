@@ -15,12 +15,13 @@ pip install -r requirements.txt
 Open notebooks/EDA.ipynb and run all cells in order.
 
 ## Results
-| Model             | MAE (Wh) | RMSE (Wh) | R2     |
-|-------------------|----------|-----------|--------|
-| Linear Regression | 26.45    | 57.39     | 0.5465 |
-| GRU               | 34.62    | 70.11     | 0.3231 |
-| CNN-LSTM          | 35.53    | 73.13     | 0.2636 |
-| LSTM              | 40.62    | 78.00     | 0.1621 |
-| Random Forest     | 63.74    | 92.91     | -0.1886|
+| Model             | MAE (Wh) | RMSE (Wh) | R2      |
+|-------------------|----------|-----------|---------|
+| Linear Regression | 26.33    | 57.36     | 0.5422  |
+| CNN-LSTM          | 36.24    | 81.88     | 0.0671  |
+| LSTM              | 47.87    | 82.44     | 0.0543  |
+| GRU               | 48.92    | 93.70     | -0.2216 |
+| Random Forest     | 62.65    | 92.14     | -0.1813 |
 
-Best deep learning model: GRU (saved as models/trained_model.keras)
+Best overall model: Linear Regression
+Best deep learning model: CNN-LSTM (saved as models/trained_model.h5)
